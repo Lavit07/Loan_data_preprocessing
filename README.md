@@ -18,7 +18,8 @@ The preprocessing pipeline treats string and numeric values separately, as well 
 - Issue Date - Converting Dates into Months number and 
 - Loan Status - Subsituting 0 for '','Charged Off','Default','Late(31-120 days)' and 1 for 'Current', 'Fully Paid', 'In Grace Period', 'Issued'
 - Term - Stripping 'months' from the data and substituting '' with 60.
-- Grade and Sub Grade - As Grade is included in the subgrade column making the Grade column redundant. While in Subgrade substituing the numbers in place for variables. for example - 'A1' = 1 to 'H1' = 36. 
+- Grade and Sub Grade - As Grade is included in the subgrade column making the Grade column redundant. While in Subgrade substituing the numbers
+    in place for variables. for example - 'A1' = 1 to 'H1' = 36. 
 - Verification Status - Substituting '', 'Not Verified' - 0 and 'Source Verified', 'Verified' - 1
 - URL - has same id as the loan_id column in dataset, hence deleting the URL column
 - State Address - breaking the states into for region 'west', 'south', 'midwest' and 'east' and substituing corresponding 1-4 values in it.
